@@ -6,15 +6,16 @@
             var resolution = $("#resolution").val() || '480p';
             var maxFrameRate = $("#maxFrameRate").val() || 15;
             //var maxBitRate = maxRateSlider.slider("getValue") || 750;
-
+            
             Cookies.set("resolution", resolution);
             Cookies.set("maxFrameRate", maxFrameRate);
             //Cookies.set("maxBitRate", maxBitRate);
         });
 
+        $("#join-meeting").click();
         $("#join-meeting").click(function(e) {
             e.preventDefault();
-            var roomName = $("#room-name").val();
+            var roomName = 'Conf';// $("#room-name").val();
 
             if (!roomName) {
                 $("#room-name").addClass("required-field");
