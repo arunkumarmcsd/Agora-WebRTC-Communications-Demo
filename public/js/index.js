@@ -14,12 +14,9 @@
         $("#join-meeting").click();
         $("#join-meeting").click(function(e) {
             e.preventDefault();
-            var roomName = $("#room-name").val();
+            var roomName = "Doctor Appointment";
 
-            if (!roomName) {
-                $("#room-name").addClass("required-field");
-            }
-
+          
             if (roomName) {
                 Cookies.set("roomName", roomName);
                 window.location.href = "meeting.html";
