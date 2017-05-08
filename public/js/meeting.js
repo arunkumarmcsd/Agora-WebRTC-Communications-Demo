@@ -17,7 +17,7 @@
         var resolution = Cookies.get("resolution") || "480p",
             maxFrameRate = Number(Cookies.get("maxFrameRate") || 15),
             //maxBitRate        = Number(Cookies.get("maxBitRate") || 750),
-            channel = "Doctor's Appointment";//Cookies.get("roomName"),
+            channel = "Doctor's Appointment",//Cookies.get("roomName"),
             remoteStreamList = [],
             client = AgoraRTC.createRtcClient(),
             disableAudio = false,
